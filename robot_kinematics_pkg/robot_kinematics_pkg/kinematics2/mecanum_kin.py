@@ -15,7 +15,7 @@ class MecanumKinematics(Kinematics):
             [-1 / (L + W), 1 / (L + W), -1 / (L + W), 1 / (L + W)]
         ])
         # matrix for inverse kinematics
-        self.M_inverse = (60.0 / (2.0 * 3.1416 * R)) * np.array([
+        self.M_inverse = 2 *(60.0 / (2.0 * 3.1416 * R)) * np.array([
             [1, -1, -(L + W)],
             [1,  1,  (L + W)],
             [1,  1, -(L + W)],
