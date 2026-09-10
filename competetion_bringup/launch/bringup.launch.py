@@ -4,11 +4,6 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='camera_drivers',
-            executable='mono_publisher', 
-            output='screen'
-        ),
-        Node(
             package='robot_kinematics_pkg',
             executable='mecanum_invers', 
             output='screen'
